@@ -20,7 +20,7 @@
   height: 297mm;
   width: 210mm;
   /* 余白サイズ */
-  padding-top: 50mm;
+  padding-top: 60mm;
   padding-left: 10mm;
   padding-right: 10mm;
 }
@@ -111,11 +111,11 @@ h2 {
 /* 相手 */
 div.dear {
 	float: left;
-	width: 80mm;
+	width: 100mm;
 }
 
 div.myself {
-	padding-left: 85mm
+	padding-left: 120mm
 }
 
 p.ki {
