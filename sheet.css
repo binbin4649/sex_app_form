@@ -1,21 +1,12 @@
-/* 印刷時の用紙設定 */
-@page {
-  size: A4; /* 用紙サイズ */
-  margin: 0; /* ヘッダー・フッダーを無効化 */
-}
-
 /* 要素の初期化 */
 * {
   margin: 0;
   padding: 0;
   /* デフォルトのフォント */
   color: #191970;
-  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
-    sans-serif;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
   font-size: 11pt;
   font-weight: normal;
-  /* 背景色・背景画像を印刷する（Chromeのみで有効） */
-  -webkit-print-color-adjust: exact;
 }
 
 /* ページレイアウト (section.sheet を１ページとする) */
@@ -24,28 +15,16 @@
   position: relative;
   box-sizing: border-box;
   page-break-after: always;
-
-  /* 用紙サイズ A4 */
+  margin: auto;
+ /* 用紙サイズ A4 */
   height: 297mm;
   width: 210mm;
-
   /* 余白サイズ */
   padding-top: 50mm;
-  padding-left: 27mm;
-  padding-right: 27mm;
+  padding-left: 10mm;
+  padding-right: 10mm;
 }
 
-/* プレビュー用のスタイル */
-@media screen {
-  body {
-    background: #e0e0e0;
-  }
-  .sheet {
-    background: white; /* 背景を白く */
-    box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3); /* ドロップシャドウ */
-    margin: 5mm auto;
-  }
-}
 
 /* 汎用クラス */
 .text-left {
